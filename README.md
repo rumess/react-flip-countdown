@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-flip-countdown.svg)](https://www.npmjs.com/package/react-flip-countdown) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+[DEMO](https://rumess.github.io/react-flip-countdown/)
+
 ## Install
 
 ```bash
@@ -12,7 +14,7 @@ npm install --save react-flip-countdown
 
 ## Usage
 
-# Basic
+### Basic
 
 ```jsx
 import React, { Component } from 'react';
@@ -30,7 +32,7 @@ class ExampleBasic extends Component {
 }
 ```
 
-# Size
+### Size
 
 ```jsx
 import React, { Component } from 'react';
@@ -49,7 +51,7 @@ class ExampleSize extends Component {
 }
 ```
 
-# Theme
+### Theme
 
 ```jsx
 import React, { Component } from 'react';
@@ -68,7 +70,7 @@ class ExampleTheme extends Component {
 }
 ```
 
-# Title Position
+### Title Position
 
 ```jsx
 import React, { Component } from 'react';
@@ -87,7 +89,7 @@ class ExampleTitlePosition extends Component {
 }
 ```
 
-# Hide certain sections
+### Hide certain sections
 
 ```jsx
 import React, { Component } from 'react';
