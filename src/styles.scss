@@ -1,0 +1,201 @@
+$halfHeight: 0.52em;
+$borderRadius: 0.15em;
+
+.flip-countdown {
+    text-align: center;
+    perspective: 400px;
+    margin: 0 auto;
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    .flip-countdown-piece {
+        display: inline-block;
+        margin: 0 0.22em;
+        .flip-countdown-title {
+            font-size: 2vw;
+        }
+        .flip-countdown-card {
+            display: flex;
+            .flip-countdown-card-sec {
+                display: block;
+                position: relative;
+                margin: 0 0.04em;
+                padding-bottom: $halfHeight;
+                font-size: 9vw;
+                line-height: 0.95;
+                border-radius: $borderRadius;
+                box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2),
+                    inset 2px 4px 0 0 rgba(255, 255, 255, 0.08);
+                .card__top,
+                .card__bottom,
+                .card__back::before,
+                .card__back::after {
+                    display: block;
+                    height: $halfHeight;
+                    color: #ccc;
+                    background: #222;
+                    padding: 0 0.1em;
+                    border-radius: $borderRadius $borderRadius 0 0;
+                    transform-style: preserve-3d;
+                    transform: translateZ(0);
+                }
+                .card__top {
+                    border-bottom: solid 1px #000;
+                }
+                .card__bottom {
+                    color: #fff;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    background: #393939;
+                    border-radius: 0 0 $borderRadius $borderRadius;
+                    pointer-events: none;
+                    overflow: hidden;
+
+                    &::after {
+                        display: block;
+                        margin-top: -$halfHeight;
+                        content: attr(data-value);
+                    }
+                }
+                .card__back {
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    left: 0%;
+                    pointer-events: none;
+
+                    &::before {
+                        position: relative;
+                        content: attr(data-value);
+                        z-index: -1;
+                        overflow: hidden;
+                    }
+                }
+                &.flip {
+                    .card__back {
+                        .card__bottom {
+                            transform-origin: center top;
+                            animation-fill-mode: both;
+                            animation: flipBottom 0.6s
+                                cubic-bezier(0.15, 0.45, 0.28, 1);
+                        }
+
+                        &::before {
+                            animation: flipTop 0.3s
+                                cubic-bezier(0.37, 0.01, 0.94, 0.35);
+                            animation-fill-mode: both;
+                            transform-origin: center bottom;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .flip-countdown-card-divider {
+        font-size: 2vw;
+    }
+
+    // Themes
+    &.theme-light {
+        .flip-countdown-piece {
+            .flip-countdown-card {
+                .flip-countdown-card-sec {
+                    .card__top,
+                    .card__bottom,
+                    .card__back::before,
+                    .card__back::after {
+                        color: #de4848;
+                        background: #f7f7f7;
+                    }
+                    .card__top {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+                    .card__bottom {
+                        color: #de4848;
+                        background: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    // Sizes
+    &.size-medium {
+        .flip-countdown-piece {
+            margin: 0 0.2em;
+            .flip-countdown-title {
+                font-size: 24px;
+            }
+            .flip-countdown-card {
+                .flip-countdown-card-sec {
+                    margin: 0 0.025em;
+                    font-size: 72px;
+                }
+            }
+        }
+    }
+    &.size-small {
+        .flip-countdown-piece {
+            margin: 0 0.15em;
+            .flip-countdown-title {
+                font-size: 14px;
+            }
+            .flip-countdown-card {
+                .flip-countdown-card-sec {
+                    margin: 0 0.023em;
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    &.size-extra-small {
+        .flip-countdown-piece {
+            margin: 0 0.15em;
+            .flip-countdown-title {
+                font-size: 10px;
+            }
+            .flip-countdown-card {
+                .flip-countdown-card-sec {
+                    margin: 0 0.025em;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes flipTop {
+    0% {
+        transform: rotateX(0deg);
+        z-index: 2;
+    }
+    0%,
+    99% {
+        opacity: 0.99;
+    }
+    100% {
+        transform: rotateX(-90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes flipBottom {
+    0%,
+    50% {
+        z-index: -1;
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+    51% {
+        opacity: 0.99;
+    }
+    100% {
+        opacity: 0.99;
+        transform: rotateX(0deg);
+        z-index: 5;
+    }
+}
