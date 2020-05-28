@@ -1,6 +1,6 @@
 # react-flip-countdown
 
-<!-- > Made with create-react-library -->
+> The React Flip Countdown Component.
 
 [![NPM](https://img.shields.io/npm/v/react-flip-countdown.svg)](https://www.npmjs.com/package/react-flip-countdown) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
