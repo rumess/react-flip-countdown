@@ -1,6 +1,6 @@
 # react-flip-countdown
 
-> Made with create-react-library
+<!-- > Made with create-react-library -->
 
 [![NPM](https://img.shields.io/npm/v/react-flip-countdown.svg)](https://www.npmjs.com/package/react-flip-countdown) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -12,16 +12,102 @@ npm install --save react-flip-countdown
 
 ## Usage
 
+# Basic
+
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import MyComponent from 'react-flip-countdown'
-import 'react-flip-countdown/dist/index.css'
+import FlipCountdown from 'react-flip-countdown';
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+class ExampleBasic extends Component {
+    render() {
+        return (
+            <FlipCountdown
+                endAt={'2022-12-12 01:26:58'} // Date/Time
+            />
+        );
+    }
+}
+```
+
+# Size
+
+```jsx
+import React, { Component } from 'react';
+
+import FlipCountdown from 'react-flip-countdown';
+
+class ExampleSize extends Component {
+    render() {
+        return (
+            <FlipCountdown
+                size='large' // Options (Default: medium): large, medium, small, extra-small.
+                endAt={'2022-12-12 01:26:58'} // Date/Time
+            />
+        );
+    }
+}
+```
+
+# Theme
+
+```jsx
+import React, { Component } from 'react';
+
+import FlipCountdown from 'react-flip-countdown';
+
+class ExampleTheme extends Component {
+    render() {
+        return (
+            <FlipCountdown
+                theme='dark' // Options (Default: dark): dark, light.
+                endAt={'2022-12-12 01:26:58'} // Date/Time
+            />
+        );
+    }
+}
+```
+
+# Title Position
+
+```jsx
+import React, { Component } from 'react';
+
+import FlipCountdown from 'react-flip-countdown';
+
+class ExampleTitlePosition extends Component {
+    render() {
+        return (
+            <FlipCountdown
+                titlePosition='top' // Options (Default: top): top, bottom.
+                endAt={'2022-12-12 01:26:58'} // Date/Time
+            />
+        );
+    }
+}
+```
+
+# Hide certain sections
+
+```jsx
+import React, { Component } from 'react';
+
+import FlipCountdown from 'react-flip-countdown';
+
+class ExampleHideSection extends Component {
+    render() {
+        return (
+            <FlipCountdown
+                hideYear
+                hideMonth
+                hideDay
+                // hideHour
+                // hideMinute
+                // hideSecond
+                endAt={'2022-12-12 01:26:58'} // Date/Time
+            />
+        );
+    }
 }
 ```
 
