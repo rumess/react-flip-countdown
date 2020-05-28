@@ -1,15 +1,15 @@
-# react-flip-countdown
+# @rumess/react-flip-countdown
 
 > The React Flip Countdown Component.
 
-[![NPM](https://img.shields.io/npm/v/react-flip-countdown.svg)](https://www.npmjs.com/package/react-flip-countdown) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@rumess/react-flip-countdown.svg)](https://www.npmjs.com/package/@rumess/react-flip-countdown) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 [DEMO](https://rumess.github.io/react-flip-countdown/)
 
 ## Install
 
 ```bash
-npm install --save react-flip-countdown
+npm install --save @rumess/react-flip-countdown
 ```
 
 ## Usage
