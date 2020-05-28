@@ -19,7 +19,7 @@ npm install --save @rumess/react-flip-countdown
 ```jsx
 import React, { Component } from 'react';
 
-import FlipCountdown from 'react-flip-countdown';
+import FlipCountdown from '@rumess/react-flip-countdown';
 
 class ExampleBasic extends Component {
     render() {
@@ -37,7 +37,7 @@ class ExampleBasic extends Component {
 ```jsx
 import React, { Component } from 'react';
 
-import FlipCountdown from 'react-flip-countdown';
+import FlipCountdown from '@rumess/react-flip-countdown';
 
 class ExampleSize extends Component {
     render() {
@@ -56,7 +56,7 @@ class ExampleSize extends Component {
 ```jsx
 import React, { Component } from 'react';
 
-import FlipCountdown from 'react-flip-countdown';
+import FlipCountdown from '@rumess/react-flip-countdown';
 
 class ExampleTheme extends Component {
     render() {
@@ -75,7 +75,7 @@ class ExampleTheme extends Component {
 ```jsx
 import React, { Component } from 'react';
 
-import FlipCountdown from 'react-flip-countdown';
+import FlipCountdown from '@rumess/react-flip-countdown';
 
 class ExampleTitlePosition extends Component {
     render() {
@@ -94,7 +94,7 @@ class ExampleTitlePosition extends Component {
 ```jsx
 import React, { Component } from 'react';
 
-import FlipCountdown from 'react-flip-countdown';
+import FlipCountdown from '@rumess/react-flip-countdown';
 
 class ExampleHideSection extends Component {
     render() {
