@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import T from 'prop-types';
+import PropsType from 'prop-types';
 import moment from 'moment';
 import './styles.scss';
 
@@ -321,52 +321,52 @@ FlipCountdown.propTypes = {
     /**
      * The theme of Flip countdown component.
      */
-    theme: T.oneOf(['light', 'dark']),
+    theme: PropsType.oneOf(['light', 'dark']),
 
     /**
      * The size of Flip countdown component card.
      */
-    size: T.oneOf(['large', 'medium', 'small', 'extra-small']),
+    size: PropsType.oneOf(['large', 'medium', 'small', 'extra-small']),
 
     /**
      * Date/time value for the counter.
      */
-    endAt: T.string,
+    endAt: PropsType.string,
 
     /**
      * Hide Year counter.
      */
-    hideYear: T.bool,
+    hideYear: PropsType.bool,
 
     /**
      * Hide Month counter.
      */
-    hideMonth: T.bool,
+    hideMonth: PropsType.bool,
 
     /**
      * Hide Day counter.
      */
-    hideDay: T.bool,
+    hideDay: PropsType.bool,
 
     /**
      * Hide Hour counter.
      */
-    hideHour: T.bool,
+    hideHour: PropsType.bool,
 
     /**
      * Hide Minute counter.
      */
-    hideMinute: T.bool,
+    hideMinute: PropsType.bool,
 
     /**
      * Hide Second counter.
      */
-    hideSecond: T.bool,
+    hideSecond: PropsType.bool,
 
     /**
      * Title Position.
      */
-    titlePosition: T.oneOf(['top', 'bottom'])
+    titlePosition: PropsType.oneOf(['top', 'bottom'])
 };
 
 export default FlipCountdown;
