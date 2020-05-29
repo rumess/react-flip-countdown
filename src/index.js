@@ -4,19 +4,6 @@ import moment from 'moment';
 import './styles.scss';
 
 const FlipCountdown = (props) => {
-    const {
-        theme = 'dark',
-        size = 'medium',
-        endAt = moment(),
-        hideYear,
-        hideMonth,
-        hideDay,
-        hideHour,
-        hideMinute,
-        hideSecond,
-        titlePosition = 'top'
-    } = props;
-
     const [completed, setCompleted] = useState(false);
     const clock = {
         year: {
@@ -56,6 +43,18 @@ const FlipCountdown = (props) => {
             ref: useRef(null)
         }
     };
+    const {
+        theme = 'dark',
+        size = 'medium',
+        endAt = moment(),
+        hideYear,
+        hideMonth,
+        hideDay,
+        hideHour,
+        hideMinute,
+        hideSecond,
+        titlePosition = 'top'
+    } = props;
     let interval = null;
     let prev = moment.duration(moment().diff(moment()));
 

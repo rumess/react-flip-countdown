@@ -4,10 +4,10 @@
     "version": "0.0.0",
     "private": true,
     "dependencies": {
-        "@rumess/react-flip-countdown": "^1.0.0",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "react-scripts": "^3.4.1"
+        "@rumess/react-flip-countdown": "file:..",
+        "react": "../node_modules/react",
+        "react-dom": "../node_modules/react-dom",
+        "react-scripts": "../node_modules/react-scripts"
     },
     "scripts": {
         "start": "react-scripts start",
