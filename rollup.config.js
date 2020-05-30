@@ -22,7 +22,7 @@ export default {
     ],
     plugins: [
         cleaner({
-            targets: ['./dist/']
+            targets: process.env.BUILD === 'production' ? ['./dist/'] : []
         }),
         external(),
         postcss({
