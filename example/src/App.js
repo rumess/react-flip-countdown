@@ -94,6 +94,25 @@ const App = () => {
                             2
                 ).toUTCString()}
             />
+            <h1>Change title:</h1>
+            <FlipCountdown
+                yearTitle='Year'
+                monthTitle='Months'
+                dayTitle='Days'
+                hourTitle='Hours'
+                minuteTitle='Minutes'
+                secondTitle='Seconds'
+                endAt={new Date(
+                    Date.now() +
+                        1000 /*sec*/ *
+                        60 /*min*/ *
+                        60 /*hour*/ *
+                        24 /*day*/ *
+                        30 /*month*/ *
+                        12 /*year*/ *
+                            2
+                ).toUTCString()}
+            />
             <h1>Hide Sections</h1>
             <FlipCountdown
                 hideYear

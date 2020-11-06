@@ -264,7 +264,8 @@ const FlipCountdown = (props) => {
         prev = value;
     };
 
-    const getPiece = (data) => {
+    const getPiece = (key) => {
+        const data = clock[key];
         const [value] = data.value;
         const [prevValue] = data.prevValue;
         const part1 = parseInt(value / 10);
@@ -275,7 +276,7 @@ const FlipCountdown = (props) => {
         return (
             <span className='flip-countdown-piece' ref={data.ref}>
                 {'top' === titlePosition && (
-                    <span className='flip-countdown-title'>{data.title}</span>
+                    <span className='flip-countdown-title'>{ props[`${key}Title`] || data.title}</span>
                 )}
                 <span className='flip-countdown-card'>
                     <span className={`flip-countdown-card-sec one`}>
@@ -306,12 +307,12 @@ const FlipCountdown = (props) => {
 
     return (
         <div className={`flip-countdown theme-${theme} size-${size}`}>
-            {!hideYear && getPiece(clock.year)}
-            {!hideMonth && getPiece(clock.month)}
-            {!hideDay && getPiece(clock.day)}
-            {!hideHour && getPiece(clock.hour)}
-            {!hideMinute && getPiece(clock.minute)}
-            {!hideSecond && getPiece(clock.second)}
+            {!hideYear && getPiece('year')}
+            {!hideMonth && getPiece('month')}
+            {!hideDay && getPiece('day')}
+            {!hideHour && getPiece('hour')}
+            {!hideMinute && getPiece('minute')}
+            {!hideSecond && getPiece('second')}
         </div>
     );
 };
@@ -365,7 +366,34 @@ FlipCountdown.propTypes = {
     /**
      * Title Position.
      */
-    titlePosition: PropsType.oneOf(['top', 'bottom'])
+    titlePosition: PropsType.oneOf(['top', 'bottom']),
+
+    /**
+     * Change year's title.
+     */
+    yearTitle: PropsType.string,
+    
+    /**
+     * Change month's title.
+     */
+    monthTitle: PropsType.string,
+    
+    /**
+     * Change day's title.
+     */
+    dayTitle: PropsType.string,
+    /**
+     * Change hour's title.
+     */
+    hourTitle: PropsType.string,
+    /**
+     * Change minute's title.
+     */
+    minuteTitle: PropsType.string,
+    /**
+     * Change second's title.
+     */
+    secondTitle: PropsType.string,
 };
 
 export default FlipCountdown;
