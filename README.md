@@ -89,6 +89,30 @@ class ExampleTitlePosition extends Component {
 }
 ```
 
+### Change title
+
+```jsx
+import React, { Component } from 'react';
+
+import FlipCountdown from '@rumess/react-flip-countdown';
+
+class ExampleTitlePosition extends Component {
+    render() {
+        return (
+            <FlipCountdown
+                yearTitle='Year' // Options
+                monthTitle='Months' // Options
+                dayTitle='Days' // Options
+                hourTitle='Hours' // Options
+                minuteTitle='Minutes' // Options
+                secondTitle='Seconds' // Options
+                endAt={'2022-12-12 01:26:58'} // Date/Time
+            />
+        );
+    }
+}
+```
+
 ### Hide certain sections
 
 ```jsx
