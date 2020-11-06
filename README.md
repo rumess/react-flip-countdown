@@ -96,16 +96,16 @@ import React, { Component } from 'react';
 
 import FlipCountdown from '@rumess/react-flip-countdown';
 
-class ExampleTitlePosition extends Component {
+class ExampleChangeTitle extends Component {
     render() {
         return (
             <FlipCountdown
-                yearTitle='Year' // Options
-                monthTitle='Months' // Options
-                dayTitle='Days' // Options
-                hourTitle='Hours' // Options
-                minuteTitle='Minutes' // Options
-                secondTitle='Seconds' // Options
+                yearTitle='Year'
+                monthTitle='Months'
+                dayTitle='Days'
+                hourTitle='Hours'
+                minuteTitle='Minutes'
+                secondTitle='Seconds'
                 endAt={'2022-12-12 01:26:58'} // Date/Time
             />
         );
