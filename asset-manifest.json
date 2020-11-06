@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/react-flip-countdown/static/css/main.ae5843f0.chunk.css",
-    "main.js": "/react-flip-countdown/static/js/main.727247d4.chunk.js",
-    "main.js.map": "/react-flip-countdown/static/js/main.727247d4.chunk.js.map",
+    "main.js": "/react-flip-countdown/static/js/main.aae826cb.chunk.js",
+    "main.js.map": "/react-flip-countdown/static/js/main.aae826cb.chunk.js.map",
     "runtime-main.js": "/react-flip-countdown/static/js/runtime-main.250dd740.js",
     "runtime-main.js.map": "/react-flip-countdown/static/js/runtime-main.250dd740.js.map",
     "static/js/2.e3d73fee.chunk.js": "/react-flip-countdown/static/js/2.e3d73fee.chunk.js",
     "static/js/2.e3d73fee.chunk.js.map": "/react-flip-countdown/static/js/2.e3d73fee.chunk.js.map",
     "index.html": "/react-flip-countdown/index.html",
-    "precache-manifest.d068544bed93bf1e04ab589ee3c7d49e.js": "/react-flip-countdown/precache-manifest.d068544bed93bf1e04ab589ee3c7d49e.js",
+    "precache-manifest.35de12528d23164defd464bc24911f88.js": "/react-flip-countdown/precache-manifest.35de12528d23164defd464bc24911f88.js",
     "service-worker.js": "/react-flip-countdown/service-worker.js",
     "static/css/main.ae5843f0.chunk.css.map": "/react-flip-countdown/static/css/main.ae5843f0.chunk.css.map",
     "static/js/2.e3d73fee.chunk.js.LICENSE.txt": "/react-flip-countdown/static/js/2.e3d73fee.chunk.js.LICENSE.txt",
-    "static/js/main.727247d4.chunk.js.LICENSE.txt": "/react-flip-countdown/static/js/main.727247d4.chunk.js.LICENSE.txt"
+    "static/js/main.aae826cb.chunk.js.LICENSE.txt": "/react-flip-countdown/static/js/main.aae826cb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.250dd740.js",
     "static/js/2.e3d73fee.chunk.js",
     "static/css/main.ae5843f0.chunk.css",
-    "static/js/main.727247d4.chunk.js"
+    "static/js/main.aae826cb.chunk.js"
   ]
 }

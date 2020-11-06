@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-flip-countdown/precache-manifest.d068544bed93bf1e04ab589ee3c7d49e.js"
+  "/react-flip-countdown/precache-manifest.35de12528d23164defd464bc24911f88.js"
 );
 
 self.addEventListener('message', (event) => {
