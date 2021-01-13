@@ -1,6 +1,6 @@
 {
     "name": "@rumess/react-flip-countdown",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "The React Flip Countdown Component",
     "author": "rumess",
     "license": "MIT",
@@ -21,7 +21,7 @@
     "scripts": {
         "build": "rollup -c --environment INCLUDE_DEPS,BUILD:production",
         "start": "rollup -c -w --environment INCLUDE_DEPS,BUILD:development",
-        "prepublish": "run-s build",
+        "prepare": "run-s build",
         "test": "run-s test:unit test:lint test:build",
         "test:build": "run-s build",
         "test:lint": "eslint .",
