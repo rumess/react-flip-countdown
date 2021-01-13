@@ -276,7 +276,9 @@ const FlipCountdown = (props) => {
         return (
             <span className='flip-countdown-piece' ref={data.ref}>
                 {'top' === titlePosition && (
-                    <span className='flip-countdown-title'>{ props[`${key}Title`] || data.title}</span>
+                    <span className='flip-countdown-title'>
+                        {props[`${key}Title`] || data.title}
+                    </span>
                 )}
                 <span className='flip-countdown-card'>
                     <span className={`flip-countdown-card-sec one`}>
@@ -295,7 +297,9 @@ const FlipCountdown = (props) => {
                     </span>
                 </span>
                 {'bottom' === titlePosition && (
-                    <span className='flip-countdown-title'>{data.title}</span>
+                    <span className='flip-countdown-title'>
+                        {props[`${key}Title`] || data.title}
+                    </span>
                 )}
             </span>
         );
@@ -372,12 +376,12 @@ FlipCountdown.propTypes = {
      * Change year's title.
      */
     yearTitle: PropsType.string,
-    
+
     /**
      * Change month's title.
      */
     monthTitle: PropsType.string,
-    
+
     /**
      * Change day's title.
      */
@@ -393,7 +397,7 @@ FlipCountdown.propTypes = {
     /**
      * Change second's title.
      */
-    secondTitle: PropsType.string,
+    secondTitle: PropsType.string
 };
 
 export default FlipCountdown;
