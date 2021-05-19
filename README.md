@@ -172,5 +172,5 @@ MIT © [rumess](https://github.com/rumess)
 [npm-url]: https://npmjs.org/package/@rumess/react-flip-countdown
 [downloads-image]: https://img.shields.io/npm/dm/@rumess/react-flip-countdown.svg
 [downloads-url]: https://npmcharts.com/compare/@rumess/react-flip-countdown?minimal=true
-[coding-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg)]
+[coding-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [coding-url]: https://standardjs.com
