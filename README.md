@@ -137,6 +137,25 @@ class ExampleHideSection extends Component {
 }
 ```
 
+### End as Zero
+
+```jsx
+import React, { Component } from 'react';
+
+import FlipCountdown from '@rumess/react-flip-countdown';
+
+class ExampleHideSection extends Component {
+    render() {
+        return (
+            <FlipCountdown
+                endAtZero
+                endAt={'2022-12-12 01:26:58'} // Date/Time
+            />
+        );
+    }
+}
+```
+
 ## License
 
 MIT © [rumess](https://github.com/rumess)
