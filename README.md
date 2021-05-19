@@ -3,7 +3,8 @@
 > The React Flip Countdown Component.
 
 [![NPM Version][npm-image]][npm-url]
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM Downloads][downloads-image]][downloads-url]
+[![JavaScript Style Guide][coding-image]][coding-url]
 
 [DEMO](https://rumess.github.io/react-flip-countdown/)
 
@@ -169,5 +170,7 @@ MIT © [rumess](https://github.com/rumess)
 
 [npm-image]: https://img.shields.io/npm/v/@rumess/react-flip-countdown.svg
 [npm-url]: https://npmjs.org/package/@rumess/react-flip-countdown
-[downloads-image]: https://img.shields.io/npm/dm/express.svg
-[downloads-url]: https://npmcharts.com/compare/express?minimal=true
+[downloads-image]: https://img.shields.io/npm/dm/@rumess/react-flip-countdown.svg
+[downloads-url]: https://npmcharts.com/compare/@rumess/react-flip-countdown?minimal=true
+[coding-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg)]
+[coding-url]: https://standardjs.com
