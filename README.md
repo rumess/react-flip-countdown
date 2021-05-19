@@ -2,7 +2,8 @@
 
 > The React Flip Countdown Component.
 
-[![NPM](https://img.shields.io/npm/v/@rumess/react-flip-countdown.svg)](https://www.npmjs.com/package/@rumess/react-flip-countdown) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM Version][npm-image]][npm-url]
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 [DEMO](https://rumess.github.io/react-flip-countdown/)
 
