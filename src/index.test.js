@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { FlipCountdown } from '.'
 
-describe('ExampleComponent', () => {
+describe('FlipCountdown', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(FlipCountdown).toBeTruthy()
   })
 })
