@@ -8,8 +8,14 @@
 
 ## Install
 
+Using npm:
 ```bash
-npm install --save @rumess/react-flip-countdown
+npm install @rumess/react-flip-countdown
+```
+
+Using yarn:
+```bash
+yarn add @rumess/react-flip-countdown
 ```
 
 ## Usage
