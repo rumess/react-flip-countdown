@@ -53,7 +53,8 @@ const FlipCountdown = (props) => {
         hideHour,
         hideMinute,
         hideSecond,
-        titlePosition = 'top'
+        titlePosition = 'top',
+        endAtZero,
     } = props;
     let interval = null;
     let prev = moment.duration(moment().diff(moment()));
@@ -116,7 +117,7 @@ const FlipCountdown = (props) => {
             clock.month.prevValue[1](prev.months());
             if (
                 parseInt(value.months() / 10) !==
-                    parseInt(prev.months() / 10) &&
+                parseInt(prev.months() / 10) &&
                 clock.month.ref.current
             ) {
                 const section = clock.month.ref.current.querySelector(
@@ -129,7 +130,7 @@ const FlipCountdown = (props) => {
 
             if (
                 parseInt(value.months() % 10) !==
-                    parseInt(prev.months() % 10) &&
+                parseInt(prev.months() % 10) &&
                 clock.month.ref.current
             ) {
                 const section = clock.month.ref.current.querySelector(
@@ -205,7 +206,7 @@ const FlipCountdown = (props) => {
             clock.minute.prevValue[1](prev.minutes());
             if (
                 parseInt(value.minutes() / 10) !==
-                    parseInt(prev.minutes() / 10) &&
+                parseInt(prev.minutes() / 10) &&
                 clock.minute.ref.current
             ) {
                 const section = clock.minute.ref.current.querySelector(
@@ -218,7 +219,7 @@ const FlipCountdown = (props) => {
 
             if (
                 parseInt(value.minutes() % 10) !==
-                    parseInt(prev.minutes() % 10) &&
+                parseInt(prev.minutes() % 10) &&
                 clock.minute.ref.current
             ) {
                 const section = clock.minute.ref.current.querySelector(
@@ -236,7 +237,7 @@ const FlipCountdown = (props) => {
             clock.second.prevValue[1](prev.seconds());
             if (
                 parseInt(value.seconds() / 10) !==
-                    parseInt(prev.seconds() / 10) &&
+                parseInt(prev.seconds() / 10) &&
                 clock.second.ref.current
             ) {
                 const section = clock.second.ref.current.querySelector(
@@ -249,7 +250,7 @@ const FlipCountdown = (props) => {
 
             if (
                 parseInt(value.seconds() % 10) !==
-                    parseInt(prev.seconds() % 10) &&
+                parseInt(prev.seconds() % 10) &&
                 clock.second.ref.current
             ) {
                 const section = clock.second.ref.current.querySelector(
@@ -305,7 +306,7 @@ const FlipCountdown = (props) => {
         );
     };
 
-    if (completed) {
+    if (completed && !endAtZero) {
         return <div className='flip-countdown'>{props.children || endAt}</div>;
     }
 
@@ -386,18 +387,26 @@ FlipCountdown.propTypes = {
      * Change day's title.
      */
     dayTitle: PropsType.string,
+
     /**
      * Change hour's title.
      */
     hourTitle: PropsType.string,
+
     /**
      * Change minute's title.
      */
     minuteTitle: PropsType.string,
+
     /**
      * Change second's title.
      */
-    secondTitle: PropsType.string
+    secondTitle: PropsType.string,
+
+    /**
+     * End at Zero.
+     */
+    endAtZero: PropsType.bool,
 };
 
 export default FlipCountdown;
