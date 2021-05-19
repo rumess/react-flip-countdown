@@ -166,3 +166,8 @@ class ExampleHideSection extends Component {
 ## License
 
 MIT © [rumess](https://github.com/rumess)
+
+[npm-image]: https://img.shields.io/npm/v/@rumess/react-flip-countdown.svg
+[npm-url]: https://npmjs.org/package/@rumess/react-flip-countdown
+[downloads-image]: https://img.shields.io/npm/dm/express.svg
+[downloads-url]: https://npmcharts.com/compare/express?minimal=true
