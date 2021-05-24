@@ -1,7 +1,7 @@
-import { FlipCountdown } from '.'
+import FlipCountdown from '.';
 
 describe('FlipCountdown', () => {
-  it('is truthy', () => {
-    expect(FlipCountdown).toBeTruthy()
-  })
-})
+    it('is truthy', () => {
+        expect(FlipCountdown).toBeTruthy();
+    });
+});

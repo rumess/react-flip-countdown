@@ -11,12 +11,12 @@ const App = () => {
                 size='large'
                 endAt={new Date(
                     Date.now() +
-                    1000 /*sec*/ *
-                    60 /*min*/ *
-                    60 /*hour*/ *
-                    24 /*day*/ *
-                    30 /*month*/ *
-                    12 /*year*/ *
+                    1000 /* sec */ *
+                    60 /* min */ *
+                    60 /* hour */ *
+                    24 /* day */ *
+                    30 /* month */ *
+                    12 /* year */ *
                     2
                 ).toUTCString()}
             />
@@ -26,12 +26,12 @@ const App = () => {
                 size='medium'
                 endAt={new Date(
                     Date.now() +
-                    1000 /*sec*/ *
-                    60 /*min*/ *
-                    60 /*hour*/ *
-                    24 /*day*/ *
-                    30 /*month*/ *
-                    12 /*year*/ *
+                    1000 /* sec */ *
+                    60 /* min */ *
+                    60 /* hour */ *
+                    24 /* day */ *
+                    30 /* month */ *
+                    12 /* year */ *
                     2
                 ).toUTCString()}
             />
@@ -41,12 +41,12 @@ const App = () => {
                 size='small'
                 endAt={new Date(
                     Date.now() +
-                    1000 /*sec*/ *
-                    60 /*min*/ *
-                    60 /*hour*/ *
-                    24 /*day*/ *
-                    30 /*month*/ *
-                    12 /*year*/ *
+                    1000 /* sec */ *
+                    60 /* min */ *
+                    60 /* hour */ *
+                    24 /* day */ *
+                    30 /* month */ *
+                    12 /* year */ *
                     2
                 ).toUTCString()}
             />
@@ -56,12 +56,12 @@ const App = () => {
                 size='extra-small'
                 endAt={new Date(
                     Date.now() +
-                    1000 /*sec*/ *
-                    60 /*min*/ *
-                    60 /*hour*/ *
-                    24 /*day*/ *
-                    30 /*month*/ *
-                    12 /*year*/ *
+                    1000 /* sec */ *
+                    60 /* min */ *
+                    60 /* hour */ *
+                    24 /* day */ *
+                    30 /* month */ *
+                    12 /* year */ *
                     2
                 ).toUTCString()}
             />
@@ -71,12 +71,12 @@ const App = () => {
                 titlePosition='bottom'
                 endAt={new Date(
                     Date.now() +
-                    1000 /*sec*/ *
-                    60 /*min*/ *
-                    60 /*hour*/ *
-                    24 /*day*/ *
-                    30 /*month*/ *
-                    12 /*year*/ *
+                    1000 /* sec */ *
+                    60 /* min */ *
+                    60 /* hour */ *
+                    24 /* day */ *
+                    30 /* month */ *
+                    12 /* year */ *
                     2
                 ).toUTCString()}
             />
@@ -85,12 +85,12 @@ const App = () => {
                 titlePosition='bottom'
                 endAt={new Date(
                     Date.now() +
-                    1000 /*sec*/ *
-                    60 /*min*/ *
-                    60 /*hour*/ *
-                    24 /*day*/ *
-                    30 /*month*/ *
-                    12 /*year*/ *
+                    1000 /* sec */ *
+                    60 /* min */ *
+                    60 /* hour */ *
+                    24 /* day */ *
+                    30 /* month */ *
+                    12 /* year */ *
                     2
                 ).toUTCString()}
             />
@@ -104,12 +104,12 @@ const App = () => {
                 secondTitle='Seconds'
                 endAt={new Date(
                     Date.now() +
-                    1000 /*sec*/ *
-                    60 /*min*/ *
-                    60 /*hour*/ *
-                    24 /*day*/ *
-                    30 /*month*/ *
-                    12 /*year*/ *
+                    1000 /* sec */ *
+                    60 /* min */ *
+                    60 /* hour */ *
+                    24 /* day */ *
+                    30 /* month */ *
+                    12 /* year */ *
                     2
                 ).toUTCString()}
             />
