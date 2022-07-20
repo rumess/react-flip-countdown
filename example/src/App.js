@@ -132,6 +132,7 @@ const App = () => {
                     Date.now() +
                     1000 /*sec*/ * 10
                 ).toUTCString()}
+                onTimeUp={() => console.log("Time's up ⏳")}
             />
         </div>
     );
