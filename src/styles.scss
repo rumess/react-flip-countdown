@@ -8,6 +8,12 @@ $borderRadius: 0.15em;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    --background-color: #222;
+    --background-bottom-color: #393939;
+    --text-color: #ccc;
+    --text-bottom-color: #fff;
+
     *,
     *:before,
     *:after {
@@ -37,8 +43,8 @@ $borderRadius: 0.15em;
                 .card__back::after {
                     display: block;
                     height: $halfHeight;
-                    color: #ccc;
-                    background: #222;
+                    color: var(--text-color);
+                    background: var(--background-color);
                     padding: 0 0.1em;
                     border-radius: $borderRadius $borderRadius 0 0;
                     transform-style: preserve-3d;
@@ -48,11 +54,11 @@ $borderRadius: 0.15em;
                     border-bottom: solid 1px #000;
                 }
                 .card__bottom {
-                    color: #fff;
+                    color: var(--text-bottom-color);
                     position: absolute;
                     top: 50%;
                     left: 0;
-                    background: #393939;
+                    background: var(--background-bottom-color);
                     border-radius: 0 0 $borderRadius $borderRadius;
                     pointer-events: none;
                     overflow: hidden;
@@ -104,26 +110,10 @@ $borderRadius: 0.15em;
 
     // Themes
     &.theme-light {
-        .flip-countdown-piece {
-            .flip-countdown-card {
-                .flip-countdown-card-sec {
-                    .card__top,
-                    .card__bottom,
-                    .card__back::before,
-                    .card__back::after {
-                        color: #de4848;
-                        background: #f7f7f7;
-                    }
-                    .card__top {
-                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-                    }
-                    .card__bottom {
-                        color: #de4848;
-                        background: #ffffff;
-                    }
-                }
-            }
-        }
+        --text-color: #de4848;
+        --text-bottom-color: #de4848;
+        --background-color: #f7f7f7;
+        --background-bottom-color: #ffffff;
     }
 
     // Sizes
