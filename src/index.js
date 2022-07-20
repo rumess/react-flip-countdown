@@ -54,7 +54,8 @@ const FlipCountdown = (props) => {
         hideMinute,
         hideSecond,
         titlePosition = 'top',
-        endAtZero
+        endAtZero,
+        onTimeUp = () => null,
     } = props;
     let interval = null;
     let prev = moment.duration(moment().diff(moment()));
@@ -79,6 +80,7 @@ const FlipCountdown = (props) => {
         if (value.milliseconds() < 0) {
             setCompleted(true);
             clearInterval(interval);
+            onTimeUp();
             return;
         }
 
@@ -406,7 +408,12 @@ FlipCountdown.propTypes = {
     /**
      * End at Zero.
      */
-    endAtZero: PropsType.bool
+    endAtZero: PropsType.bool,
+
+    /**
+     * Time Up event
+     */
+    onTimeUp: PropsType.func
 };
 
 export default FlipCountdown;
