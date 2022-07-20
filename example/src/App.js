@@ -11,13 +11,13 @@ const App = () => {
                 size='large'
                 endAt={new Date(
                     Date.now() +
-                    1000 /* sec */ *
-                    60 /* min */ *
-                    60 /* hour */ *
-                    24 /* day */ *
-                    30 /* month */ *
-                    12 /* year */ *
-                    2
+                        1000 /* sec */ *
+                            60 /* min */ *
+                            60 /* hour */ *
+                            24 /* day */ *
+                            30 /* month */ *
+                            12 /* year */ *
+                            2
                 ).toUTCString()}
             />
             <h1>Medium:</h1>
@@ -26,13 +26,13 @@ const App = () => {
                 size='medium'
                 endAt={new Date(
                     Date.now() +
-                    1000 /* sec */ *
-                    60 /* min */ *
-                    60 /* hour */ *
-                    24 /* day */ *
-                    30 /* month */ *
-                    12 /* year */ *
-                    2
+                        1000 /* sec */ *
+                            60 /* min */ *
+                            60 /* hour */ *
+                            24 /* day */ *
+                            30 /* month */ *
+                            12 /* year */ *
+                            2
                 ).toUTCString()}
             />
             <h1>Small:</h1>
@@ -41,13 +41,13 @@ const App = () => {
                 size='small'
                 endAt={new Date(
                     Date.now() +
-                    1000 /* sec */ *
-                    60 /* min */ *
-                    60 /* hour */ *
-                    24 /* day */ *
-                    30 /* month */ *
-                    12 /* year */ *
-                    2
+                        1000 /* sec */ *
+                            60 /* min */ *
+                            60 /* hour */ *
+                            24 /* day */ *
+                            30 /* month */ *
+                            12 /* year */ *
+                            2
                 ).toUTCString()}
             />
             <h1>Extra Small:</h1>
@@ -56,13 +56,13 @@ const App = () => {
                 size='extra-small'
                 endAt={new Date(
                     Date.now() +
-                    1000 /* sec */ *
-                    60 /* min */ *
-                    60 /* hour */ *
-                    24 /* day */ *
-                    30 /* month */ *
-                    12 /* year */ *
-                    2
+                        1000 /* sec */ *
+                            60 /* min */ *
+                            60 /* hour */ *
+                            24 /* day */ *
+                            30 /* month */ *
+                            12 /* year */ *
+                            2
                 ).toUTCString()}
             />
             <h1>Light Theme:</h1>
@@ -71,13 +71,13 @@ const App = () => {
                 titlePosition='bottom'
                 endAt={new Date(
                     Date.now() +
-                    1000 /* sec */ *
-                    60 /* min */ *
-                    60 /* hour */ *
-                    24 /* day */ *
-                    30 /* month */ *
-                    12 /* year */ *
-                    2
+                        1000 /* sec */ *
+                            60 /* min */ *
+                            60 /* hour */ *
+                            24 /* day */ *
+                            30 /* month */ *
+                            12 /* year */ *
+                            2
                 ).toUTCString()}
             />
             <h1>Title Bottom:</h1>
@@ -85,13 +85,13 @@ const App = () => {
                 titlePosition='bottom'
                 endAt={new Date(
                     Date.now() +
-                    1000 /* sec */ *
-                    60 /* min */ *
-                    60 /* hour */ *
-                    24 /* day */ *
-                    30 /* month */ *
-                    12 /* year */ *
-                    2
+                        1000 /* sec */ *
+                            60 /* min */ *
+                            60 /* hour */ *
+                            24 /* day */ *
+                            30 /* month */ *
+                            12 /* year */ *
+                            2
                 ).toUTCString()}
             />
             <h1>Change title:</h1>
@@ -104,13 +104,13 @@ const App = () => {
                 secondTitle='Seconds'
                 endAt={new Date(
                     Date.now() +
-                    1000 /* sec */ *
-                    60 /* min */ *
-                    60 /* hour */ *
-                    24 /* day */ *
-                    30 /* month */ *
-                    12 /* year */ *
-                    2
+                        1000 /* sec */ *
+                            60 /* min */ *
+                            60 /* hour */ *
+                            24 /* day */ *
+                            30 /* month */ *
+                            12 /* year */ *
+                            2
                 ).toUTCString()}
             />
             <h1>Hide Sections</h1>
@@ -122,7 +122,8 @@ const App = () => {
                 // hideMinute
                 // hideSecond
                 endAt={new Date(
-                    Date.now() + 1000 /*sec*/ * 60 /*min*/ * 60 /*hour*/ * 13
+                    Date.now() +
+                        1000 /* sec */ * 60 /* min */ * 60 /* hour */ * 13
                 ).toUTCString()}
             />
             <h1>End at Zero:</h1>
@@ -130,7 +131,7 @@ const App = () => {
                 endAtZero
                 endAt={new Date(
                     Date.now() +
-                    1000 /*sec*/ * 10
+                    1000 /* sec */ * 10
                 ).toUTCString()}
                 onTimeUp={() => console.log("Time's up ⏳")}
             />

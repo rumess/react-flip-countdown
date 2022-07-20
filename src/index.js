@@ -119,7 +119,7 @@ const FlipCountdown = (props) => {
             clock.month.prevValue[1](prev.months());
             if (
                 parseInt(value.months() / 10) !==
-                parseInt(prev.months() / 10) &&
+                    parseInt(prev.months() / 10) &&
                 clock.month.ref.current
             ) {
                 const section = clock.month.ref.current.querySelector(
@@ -132,7 +132,7 @@ const FlipCountdown = (props) => {
 
             if (
                 parseInt(value.months() % 10) !==
-                parseInt(prev.months() % 10) &&
+                    parseInt(prev.months() % 10) &&
                 clock.month.ref.current
             ) {
                 const section = clock.month.ref.current.querySelector(
@@ -208,7 +208,7 @@ const FlipCountdown = (props) => {
             clock.minute.prevValue[1](prev.minutes());
             if (
                 parseInt(value.minutes() / 10) !==
-                parseInt(prev.minutes() / 10) &&
+                    parseInt(prev.minutes() / 10) &&
                 clock.minute.ref.current
             ) {
                 const section = clock.minute.ref.current.querySelector(
@@ -221,7 +221,7 @@ const FlipCountdown = (props) => {
 
             if (
                 parseInt(value.minutes() % 10) !==
-                parseInt(prev.minutes() % 10) &&
+                    parseInt(prev.minutes() % 10) &&
                 clock.minute.ref.current
             ) {
                 const section = clock.minute.ref.current.querySelector(
@@ -239,7 +239,7 @@ const FlipCountdown = (props) => {
             clock.second.prevValue[1](prev.seconds());
             if (
                 parseInt(value.seconds() / 10) !==
-                parseInt(prev.seconds() / 10) &&
+                    parseInt(prev.seconds() / 10) &&
                 clock.second.ref.current
             ) {
                 const section = clock.second.ref.current.querySelector(
@@ -252,7 +252,7 @@ const FlipCountdown = (props) => {
 
             if (
                 parseInt(value.seconds() % 10) !==
-                parseInt(prev.seconds() % 10) &&
+                    parseInt(prev.seconds() % 10) &&
                 clock.second.ref.current
             ) {
                 const section = clock.second.ref.current.querySelector(
