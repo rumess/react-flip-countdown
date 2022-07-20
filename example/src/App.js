@@ -129,10 +129,7 @@ const App = () => {
             <h1>End at Zero:</h1>
             <FlipCountdown
                 endAtZero
-                endAt={new Date(
-                    Date.now() +
-                    1000 /* sec */ * 10
-                ).toUTCString()}
+                endAt={new Date(Date.now() + 1000 /* sec */ * 10).toUTCString()}
                 onTimeUp={() => console.log("Time's up ⏳")}
             />
         </div>
