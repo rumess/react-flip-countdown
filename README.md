@@ -4,6 +4,7 @@
 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
+[![NPM Installs](https://img.shields.io/npm/dt/@rumess/react-flip-countdown?label=installs)](https://www.npmjs.com/package/@rumess/react-flip-countdown)
 [![JavaScript Style Guide][coding-image]][coding-url]
 
 [DEMO](https://rumess.github.io/react-flip-countdown/)
