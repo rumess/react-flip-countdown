@@ -1,3 +1,4 @@
+# DEPRECATED
 # @rumess/react-flip-countdown
 
 > The React Flip Countdown Component.
